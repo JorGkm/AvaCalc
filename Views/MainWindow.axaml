@@ -82,7 +82,7 @@
                 <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="+"/>
                 <!---->
                 <Button Grid.Row="3" Grid.Column="0" Content="0" Command="{Binding CmdIngresarNumero}" CommandParameter="0"/>
-                <Button Grid.Row="3" Grid.Column="1" Content="&#x276E;" Background="DarkGray" Command="{Binding CmdBorrarNumeroCommand}"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="&#x276E;" FontSize="22" Background="DarkGray" Command="{Binding CmdBorrarNumeroCommand}"/>
                 <!--<Button Grid.Row="3" Grid.Column="2" Content="U+21BB" Command="{Binding CmdIngresarNumero}" CommandParameter="6"/>-->
                 <Button Grid.Row="3" Grid.Column="2" Content="=" FontSize="32" Width="90" Height="80" Background="DarkGray" CornerRadius="10" Command="{Binding CmdCalcularResultadoCommand}"/>
                 <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="-"/>
