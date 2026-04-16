@@ -19,7 +19,9 @@ Gracias a este framework, que es multiplataforma, tenemos la posibilidad de ejec
 muchos sistemas operativos.
 
 <p align="center">
-    <img width="400" height="651" alt="AvaCalc01" src="Screenshots/AvaCalc01.png" HorizontalAlignment="Center"/>
+    <a href="Screenshots/AvaCalc01.PNG">
+        <img src="Screenshots/AvaCalc01.PNG" width="400" alt="AvaCalc01">
+    </a>
 </p>
 
 ## Compatibilidad
