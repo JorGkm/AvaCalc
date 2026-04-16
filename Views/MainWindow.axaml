@@ -1,0 +1,92 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaCalc.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="150" d:DesignHeight="250"
+        x:Class="AvaCalc.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaCalc"
+        Width="400"
+        Height="650"
+        Background="#373837"
+        CanResize="False"
+        >
+    <Window.Styles>
+        <Style Selector="Button">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="FontSize" Value="32"/>
+        <Setter Property="Width" Value="90"/>
+        <Setter Property="Height" Value="80"/>
+        </Style>
+    </Window.Styles>
+
+
+    <DockPanel Margin="10">
+        <StackPanel DockPanel.Dock="Top" Spacing="10" Margin="0,10,0,10">
+            <TextBlock
+            Text="Historial"
+            FontSize="16" 
+            Foreground="Gray" 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="5"
+            />
+            <Grid  ColumnDefinitions="*,*" Margin="10,0">
+                <TextBlock Grid.Column="0" 
+                   Text="{Binding Historial}" 
+                   FontSize="16" 
+                   Foreground="Gray" 
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"/>
+        
+                <Button Grid.Column="1" 
+                Content="&#x21BB;" 
+                Background="Red" 
+                Foreground="White"
+                FontSize="20"
+                Width="50"
+                Height="40"
+                CornerRadius="5"
+                HorizontalAlignment="Right"
+                Command="{Binding CmdLimpiarCommand}"/>
+            </Grid>
+
+             <TextBox Text="{Binding ResultTexto}" 
+             FontSize="45" 
+             Height="80"
+             TextAlignment="Right" 
+             IsReadOnly="True" 
+             Background="#4d4f4d" 
+             BorderBrush="White"
+             Foreground="White"
+             Margin="5,0"/>
+        </StackPanel>
+            <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
+                <Button Grid.Row="0" Grid.Column="0" Content="7" Command="{Binding CmdIngresarNumero}" CommandParameter="7"/>
+                <Button Grid.Row="0" Grid.Column="1" Content="8" Command="{Binding CmdIngresarNumero}" CommandParameter="8"/>
+                <Button Grid.Row="0" Grid.Column="2" Content="9" Command="{Binding CmdIngresarNumero}" CommandParameter="9"/>
+                <Button Grid.Row="0" Grid.Column="3" Content="&#x00F7;" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="&#x00F7;"/>
+                <!---->
+                <Button Grid.Row="1" Grid.Column="0" Content="4" Command="{Binding CmdIngresarNumero}" CommandParameter="4"/>
+                <Button Grid.Row="1" Grid.Column="1" Content="5" Command="{Binding CmdIngresarNumero}" CommandParameter="5"/>
+                <Button Grid.Row="1" Grid.Column="2" Content="6" Command="{Binding CmdIngresarNumero}" CommandParameter="6"/>
+                <Button Grid.Row="1" Grid.Column="3" Content="&#x00D7;" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="&#x00D7;"/>
+                <!---->
+                <Button Grid.Row="2" Grid.Column="0" Content="3" Command="{Binding CmdIngresarNumero}" CommandParameter="3"/>
+                <Button Grid.Row="2" Grid.Column="1" Content="2" Command="{Binding CmdIngresarNumero}" CommandParameter="2"/>
+                <Button Grid.Row="2" Grid.Column="2" Content="1" Command="{Binding CmdIngresarNumero}" CommandParameter="1"/>
+                <Button Grid.Row="2" Grid.Column="3" Content="+" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="+"/>
+                <!---->
+                <Button Grid.Row="3" Grid.Column="0" Content="0" Command="{Binding CmdIngresarNumero}" CommandParameter="0"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="&#x276E;" Background="DarkGray" Command="{Binding CmdBorrarNumeroCommand}"/>
+                <!--<Button Grid.Row="3" Grid.Column="2" Content="U+21BB" Command="{Binding CmdIngresarNumero}" CommandParameter="6"/>-->
+                <Button Grid.Row="3" Grid.Column="2" Content="=" FontSize="32" Width="90" Height="80" Background="DarkGray" CornerRadius="10" Command="{Binding CmdCalcularResultadoCommand}"/>
+                <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="32" Width="90" Height="80" Background="Orange" CornerRadius="10" Command="{Binding CmdEstablecerOperacionCommand}" CommandParameter="-"/>
+            </Grid>
+    </DockPanel>
+
+</Window>
