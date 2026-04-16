@@ -10,8 +10,15 @@ $$ |  $$ |   \$  /  \$$$$$$$ |\$$$$$$  |\$$$$$$$ |$$ |\$$$$$$$\
 \__|  \__|    \_/    \_______| \______/  \_______|\__| \_______|
 </pre>
 </div>
-
+##
+<p align="center">
+    <a href="Screenshots/AvaCalc01.PNG">
+        <img src="Screenshots/AvaCalc01.PNG" width="400" alt="AvaCalc01">
+    </a>
+</p>
+##
 ## Descripción 📋
+
 Una calculadora integrada en una interfaz gráfica sencilla y amigable con el usuario,
 perfecta para las operaciones básicas que todos realizamos en el día a día.
 Desarrollada en Avalonia, usando como lenguaje principal C# y el framework de .NET.
@@ -25,13 +32,8 @@ lenguaje C# y el framework de .NET, decidí usar Avalonia.
 Por ello el nombre de este proyecto proviene "Ava" de Avalonia, con lo que está desarrollado
 su interfaz gráfica y "Calc" de calculadora.
 
-<p align="center">
-    <a href="Screenshots/AvaCalc01.PNG">
-        <img src="Screenshots/AvaCalc01.PNG" width="400" alt="AvaCalc01">
-    </a>
-</p>
-
 ## Compatibilidad
+
 * **Windows** 💻
 * **Linux** 🐧
 * **MacOS** 🍎
