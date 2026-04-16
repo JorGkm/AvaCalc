@@ -1,4 +1,4 @@
-<p align="center">
+<div align="center">
 <pre>
  $$$$$$\                       $$$$$$\            $$\           
 $$  __$$\                     $$  __$$\           $$ |          
@@ -9,7 +9,7 @@ $$ |  $$ |  \$$$  / $$  __$$ |$$ |  $$\ $$  __$$ |$$ |$$ |
 $$ |  $$ |   \$  /  \$$$$$$$ |\$$$$$$  |\$$$$$$$ |$$ |\$$$$$$$\ 
 \__|  \__|    \_/    \_______| \______/  \_______|\__| \_______|
 </pre>
-</p>
+</div>
 
 ## Descripción 📋
 Una calculadora integrada en una interfaz gráfica sencilla y amigable con el usuario,
