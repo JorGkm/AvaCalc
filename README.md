@@ -19,7 +19,7 @@ Gracias a este framework, que es multiplataforma, tenemos la posibilidad de ejec
 muchos sistemas operativos.
 
 <p align="center">
-    <img width="400" height="651" alt="AvaCalc01" src="https://github.com/user-attachments/assets/1a713382-87f9-4c76-8b46-6e9587abab40" HorizontalAlignment="Center"/>
+    <img width="400" height="651" alt="AvaCalc01" src="Screenshots/AvaCalc01.png" HorizontalAlignment="Center"/>
 </p>
 
 ## Compatibilidad
